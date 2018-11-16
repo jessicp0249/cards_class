@@ -13,7 +13,6 @@ class Card
         Card(int val);
 
         int get_value();
-        string get_suit;
         string get_suit();
     
         void print();

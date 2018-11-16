@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void Deck:add_card(const Card &c)
+void Deck::add_card(Card &c)
 {
     deck.push_back(c);
 }
