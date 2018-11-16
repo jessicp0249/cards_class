@@ -17,5 +17,8 @@ void Deck::shuffle() const
 
 vector<Card> Deck::deal(int n)
 {
-        
+    for(int i = 0; i < n; i++)
+    {
+        deck[i].print();
+    }
 }
