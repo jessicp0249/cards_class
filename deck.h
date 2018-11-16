@@ -10,7 +10,7 @@ class Deck
 {
 public:
     void add_card(Card &c);
-    void shuffle() const;
+    void shuffle();
     vector<Card> deal(int n);
 
 private:
