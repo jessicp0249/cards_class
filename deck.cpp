@@ -17,5 +17,5 @@ void Deck::shuffle() const
 
 vector<Card> Deck::deal(int n)
 {
-    
+        
 }
