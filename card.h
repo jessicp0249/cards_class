@@ -12,8 +12,9 @@ class Card
         Card();
         Card(int val);
 
-        int get_value();
         string get_suit();
+        int get_value();
+        string set_suit();
     
         void print();
 

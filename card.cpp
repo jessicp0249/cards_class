@@ -8,7 +8,13 @@ using namespace std;
 
 Card::Card(int val)
 {
-    m_id = val;
+    m_id = val;     // Initialize card id with given value
+    set_suit();     // Initilize card suit based on id
+}
+
+string Card::get_suit()
+{
+    return m_suit;
 }
 
 int Card::get_value()
@@ -17,26 +23,33 @@ int Card::get_value()
     return m_value;
 }
 
-string Card::get_suit()
+void Card::set_suit()   // Calculates card suit based on id
 {
     int i = m_id / 13;
+
     if(i = 1)
-    {
         m_suit = "Clubs";
-    } else if (i = 2)
-    {
+    else if (i = 2)
         m_suit = "Spades";
-    } else if (i = 3)
-    {
+    else if (i = 3)
         m_suit = "Hearts";
-    } else 
-    {
+    else 
         m_suit = "Diamonds";
-    }
-        return m_suit;
 }
 
 void Card::print()
 {
+    if(m_value == 1)
+    cout << "Ace of " << m_suit << endl;
+    else if(m_value < 11)
     cout << m_value << " of " << m_suit << endl;
+    else if(m_value == 11)
+    cout << "Jack of " << m_suit << endl;
+    else if(m_value == 12)
+    cout << "Queen of " << m_suit << endl;
+    else if(m_value == 13)
+    cout << "King of " << m_suit << endl;
+    else if(m_value > 13)
+    cout << "That is not a valid card. You are banned from the casino." << endl;
+
 }
