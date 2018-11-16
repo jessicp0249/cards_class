@@ -13,7 +13,11 @@ class Card
         Card(int val);
 
         int get_value();
+<<<<<<< HEAD
         string get_suit;
+=======
+        string get_suit();
+>>>>>>> c308f28b08dc3787ad3e6d8385310c82ec1d2659
     
         void print();
 
@@ -22,3 +26,8 @@ class Card
         string m_suit;
 
 };
+<<<<<<< HEAD
+=======
+
+#endif
+>>>>>>> c308f28b08dc3787ad3e6d8385310c82ec1d2659
