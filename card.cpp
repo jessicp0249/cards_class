@@ -16,12 +16,12 @@ int Card::get_value()
     return m_value;
 }
 
-string Card::get_suit();
+string Card::get_suit()
 {
     return m_suit;
 }
 
-void Card::print();
+void Card::print()
 {
     cout << m_value << " of " << m_suit << endl;
 }
