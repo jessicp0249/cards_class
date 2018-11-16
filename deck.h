@@ -15,6 +15,7 @@ public:
 
 private:
     vector<Card> deck;
+
 };
 
 #endif
