@@ -10,7 +10,7 @@ void Deck::add_card(Card &c)
     deck.push_back(c);
 }
 
-void Deck::shuffle()
+void Deck::shuffle() //rand function for shuffling deck
 {
     int remaining = deck.size();
     int pos;
@@ -27,7 +27,7 @@ void Deck::shuffle()
     }
 }
 
-vector<Card> Deck::deal(int n)
+vector<Card> Deck::deal(int n) //develop print function to deal cards
 {
     for(int i = 0; i < n; i++)
     {

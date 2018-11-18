@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Card
+class Card //initialize constructors for Card part of program
 {
     public:
         Card();
