@@ -37,7 +37,7 @@ void Card::set_suit()   // Calculates card suit based on id
         m_suit = "Diamonds";
 }
 
-void Card::print()
+void Card::print() //initialize print for Ace, Jack, Queen, and King card types
 {
     if(m_value == 1)
     cout << "Ace of " << m_suit << endl;
