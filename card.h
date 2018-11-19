@@ -14,7 +14,7 @@ class Card
 
         string get_suit();
         int get_value();
-        string set_suit();
+        void set_suit();
     
         void print();
 
