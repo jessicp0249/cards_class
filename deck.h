@@ -9,7 +9,7 @@ using namespace std; //initialize constructors for deck part of program
 class Deck
 {
 public:
-    void add_card(Card &c);
+    void add_card(Card c);
     void shuffle();
     vector<Card> deal(int n);
 

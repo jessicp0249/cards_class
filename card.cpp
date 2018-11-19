@@ -12,12 +12,12 @@ Card::Card(int val)
     set_suit();     // Initilize card suit based on id
 }
 
-string Card::get_suit()
+string Card::get_suit()     // returns card suit
 {
     return m_suit;
 }
 
-int Card::get_value()
+int Card::get_value()   // returns card value
 {
     m_value = m_id % 13;
     return m_value;
@@ -37,12 +37,12 @@ void Card::set_suit()   // Calculates card suit based on id
         m_suit = "Diamonds";
 }
 
-void Card::print() //initialize print for Ace, Jack, Queen, and King card types
+void Card::print() // prints card value and suit
 {
     if(m_value == 1)
     cout << "Ace of " << m_suit << endl;
     else if(m_value < 11)
-    cout << m_value << " of " << m_suit << endl;
+    cout << m_value << " of " << m_suit << endl;    // cards from 2 to 10
     else if(m_value == 11)
     cout << "Jack of " << m_suit << endl;
     else if(m_value == 12)
