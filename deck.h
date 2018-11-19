@@ -4,7 +4,7 @@
 #include <string>
 #include "card.h"
 
-using namespace std;
+using namespace std; //initialize constructors for deck part of program
 
 class Deck
 {
